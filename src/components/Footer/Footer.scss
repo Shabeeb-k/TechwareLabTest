@@ -1,0 +1,319 @@
+.footer {
+  background: #282828;
+  color: white;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 0px; /* Positioned after bento grid */
+  border: none;
+  outline: none;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-logo-section {
+  width: 1440px;
+  height: 85px;
+  background: #282828;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-logo-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.footer-logo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  
+  .footer-logo-image {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+  }
+  
+  // Specific styling for logo4 (first logo)
+  &:first-child {
+    .footer-logo-image {
+      width: 125px;
+      height: 29.069766998291016px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo5 (second logo)
+  &:nth-child(2) {
+    .footer-logo-image {
+      width: 132px;
+      height: 24.696773529052734px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo6 (third logo)
+  &:nth-child(3) {
+    .footer-logo-image {
+      width: 122px;
+      height: 29.95209503173828px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo7 (fourth logo)
+  &:nth-child(4) {
+    .footer-logo-image {
+      width: 125px;
+      height: 29.069766998291016px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo8 (fifth logo)
+  &:nth-child(5) {
+    .footer-logo-image {
+      width: 132px;
+      height: 24.696773529052734px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo9 (sixth logo)
+  &:nth-child(6) {
+    .footer-logo-image {
+      width: 122px;
+      height: 29.95209503173828px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo10 (seventh logo)
+  &:nth-child(7) {
+    .footer-logo-image {
+      width: 125px;
+      height: 29.069766998291016px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  // Specific styling for logo11 (eighth logo - duplicate of logo5)
+  &:nth-child(8) {
+    .footer-logo-image {
+      width: 132px;
+      height: 24.696773529052734px;
+      position: relative;
+      top: 0px; /* Adjusted relative to container */
+      left: 0px; /* Adjusted relative to container */
+    }
+  }
+  
+  .logo-name {
+    opacity: 0.7;
+  }
+}
+
+// Social Media Footer Section
+.social-media-footer {
+  width: 1440px;
+  height: 85px;
+  background: #1A1A1A;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 11.78px;
+    width: 91px;
+    height: 24.6235294342041px;
+    position: absolute;
+    top: 30px; /* Adjusted relative to container (2250-2220=30) */
+    left: 200px;
+    
+    .social-icon {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+      
+      &:hover {
+        opacity: 1;
+      }
+      
+      &.instagram-icon {
+        width: 22.48235321044922px;
+        height: 22.48235321044922px;
+      }
+      
+      &.facebook-icon {
+        width: 24.6235294342041px;
+        height: 24.6235294342041px;
+      }
+      
+      &.linkedin-icon {
+        width: 20.341176986694336px;
+        height: 20.341176986694336px;
+      }
+    }
+  }
+  
+  .footer-text {
+    position: absolute;
+    width: 241px;
+    height: 25px;
+    top: 32px; /* Adjusted relative to container (2252-2220=32) */
+    left: 600px;
+    color: #D8D8D8;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.8;
+  }
+  
+  .footer-copyright {
+    position: absolute;
+    width: 240px;
+    height: 25px;
+    top: 32px; /* Adjusted relative to container (2252-2220=32) */
+    left: 998px;
+    color: white;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+  }
+}
+
+// Responsive Design
+@media (max-width: 1440px) {
+  .footer-logo-section,
+  .social-media-footer {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo-section {
+    height: 70px;
+  }
+  
+  .footer-logo-marquee {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+  
+  .footer-logo-item {
+    font-size: 12px;
+    
+    .footer-logo-image {
+      font-size: 1rem;
+    }
+  }
+  
+  .social-media-footer {
+    height: 70px;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    .social-icons {
+      gap: 0.5rem;
+      
+      .social-icon {
+        font-size: 1.2rem;
+      }
+    }
+    
+    .footer-text,
+    .footer-copyright {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo-section {
+    height: 60px;
+  }
+  
+  .footer-logo-marquee {
+    padding: 0 0.5rem;
+    gap: 0.5rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  
+  .footer-logo-item {
+    font-size: 11px;
+    white-space: nowrap;
+    
+    .footer-logo-image {
+      font-size: 0.9rem;
+    }
+  }
+  
+  .social-media-footer {
+    height: 60px;
+    padding: 0 0.5rem;
+    
+    .social-icons {
+      .social-icon {
+        font-size: 1rem;
+      }
+    }
+    
+    .footer-text,
+    .footer-copyright {
+      font-size: 10px;
+    }
+  }
+}

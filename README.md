@@ -1,49 +1,166 @@
-# Getting Started with Create React App
+# DesignStudio - React.js Implementation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React.js, GSAP animations, and SCSS styling. This project implements all the requirements from the technical specification including hero animations, scroll-triggered effects, bento grid layout, infinite marquee, and interactive components.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Hero Section**: Animated title entrance, interactive background circles with parallax effect
+- **Scroll-Revealed Text**: Smooth fade-in animations triggered by scroll position
+- **Bento Grid**: CSS Grid-based layout with hover animations and responsive design
+- **Logo Marquee**: Infinite horizontal scrolling with pause-on-hover functionality
+- **Footer**: Social media icons with hover effects and responsive layout
+- **Performance Optimized**: Smooth animations without layout shifts or frame drops
+- **Accessibility**: Keyboard navigation, ARIA labels, and reduced motion support
 
-### `npm start`
+## 🛠️ Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework**: React.js 19.2.0
+- **Animations**: GSAP 3.13.0 with ScrollTrigger
+- **Styling**: SCSS/Sass 1.93.2
+- **Build Tool**: Create React App
+- **Testing**: Jest and React Testing Library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation & Setup
 
-### `npm test`
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd test
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. **Start development server**
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view in browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/           # React components
+│   ├── HeroSection/     # Hero with animations and parallax
+│   ├── ScrollRevealText/ # Scroll-triggered text animations
+│   ├── BentoGrid/       # CSS Grid layout with hover effects
+│   ├── LogoMarquee/     # Infinite scrolling logo carousel
+│   └── Footer/          # Footer with social links
+├── constants/           # App constants and data
+├── hooks/              # Custom React hooks
+├── assets/             # Images and static assets
+└── App.js              # Main app component
+```
 
-### `npm run eject`
+## 🎨 Component Details
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### HeroSection
+- **Main Title Animation**: Fade-in with upward motion on page load
+- **Background Circles**: Sequential appearance with parallax mouse tracking
+- **CTA Button**: Interactive hover effects with scale and color transitions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ScrollRevealText
+- **Intersection Observer**: Optimized scroll detection
+- **Reversible Animations**: Fade out when scrolling back up
+- **Staggered Reveals**: Multiple text blocks with sequential animations
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### BentoGrid
+- **CSS Grid Layout**: Responsive grid using CSS Grid (not Flexbox)
+- **Hover Animations**: Logo scaling and container elevation effects
+- **Dynamic Sizing**: Large, medium, and small grid items
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### LogoMarquee
+- **Infinite Loop**: Seamless horizontal scrolling animation
+- **Hover Control**: Pause on hover, resume on mouse leave
+- **Performance**: Hardware-accelerated animations
 
-## Learn More
+### Footer
+- **Social Icons**: Hover animations with upward movement
+- **Responsive Design**: Adaptive layout for all screen sizes
+- **Accessibility**: Focus states and keyboard navigation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Animation Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **GSAP Timeline**: Coordinated animation sequences
+- **ScrollTrigger**: Scroll-based animation triggers
+- **Parallax Effects**: Mouse-responsive background elements
+- **Hardware Acceleration**: GPU-optimized animations
+- **Reduced Motion**: Respects user accessibility preferences
+
+## 📱 Responsive Design
+
+- **Mobile First**: Progressive enhancement approach
+- **Breakpoints**: 
+  - Mobile: 480px and below
+  - Tablet: 768px and below
+  - Desktop: 1024px and above
+  - Large Desktop: 1400px and above
+
+## ♿ Accessibility
+
+- **Keyboard Navigation**: Full keyboard accessibility
+- **Screen Readers**: ARIA labels and semantic HTML
+- **Focus Indicators**: Visible focus states
+- **Reduced Motion**: Animation controls for motion sensitivity
+- **Color Contrast**: WCAG compliant color schemes
+
+## 🔧 Customization
+
+### Updating Content
+- Modify constants in `src/constants/index.js`
+- Update component data (services, logos, social links)
+
+### Styling Changes
+- Edit SCSS files in component directories
+- Global styles in `src/App.scss`
+- CSS custom properties for theme colors
+
+### Animation Tweaks
+- Adjust GSAP timings in component files
+- Modify scroll trigger thresholds
+- Update parallax sensitivity values
+
+## 🚀 Performance Optimizations
+
+- **Code Splitting**: Automatic with Create React App
+- **Image Optimization**: Responsive images with proper sizing
+- **Animation Performance**: `will-change` properties for smooth animations
+- **Bundle Optimization**: Tree shaking and minification in production
+
+## 🧪 Testing
+
+```bash
+npm test          # Run tests in watch mode
+npm run test:ci   # Run tests once for CI/CD
+```
+
+## 📝 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ### Code Splitting
 

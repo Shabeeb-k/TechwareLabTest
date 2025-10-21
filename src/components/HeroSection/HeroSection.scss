@@ -1,0 +1,200 @@
+.hero-section {
+  min-height: 100vh;
+  background: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  
+  // Ellipse 1
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1749px;
+    height: 1749px;
+    background: radial-gradient(ellipse, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
+    border: 1px solid rgba(147, 51, 234, 0.1);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: 1;
+  }
+}
+
+.ellipse-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.ellipse {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.2) 0%, transparent 70%);
+  border: 1px solid rgba(147, 51, 234, 0.1);
+}
+
+// Ellipse 2
+.ellipse-2 {
+  width: 395px;
+  height: 395px;
+  top: 518px;
+  left: 677px;
+  opacity: 1;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.3) 0%, transparent 70%);
+}
+
+// Ellipse 3
+.ellipse-3 {
+  width: 667px;
+  height: 667px;
+  top: 448px;
+  left: 541px;
+  opacity: 0.8;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.25) 0%, transparent 70%);
+}
+
+// Ellipse 4
+.ellipse-4 {
+  width: 927px;
+  height: 927px;
+  top: 377px;
+  left: 411px;
+  opacity: 0.6;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.2) 0%, transparent 70%);
+}
+
+// Ellipse 5
+.ellipse-5 {
+  width: 1151px;
+  height: 1151px;
+  top: 299px;
+  left: 299px;
+  opacity: 0.5;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+}
+
+// Ellipse 6
+.ellipse-6 {
+  width: 1309px;
+  height: 1309px;
+  top: 220px;
+  left: 220px;
+  opacity: 0.3;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
+}
+
+// Ellipse 7
+.ellipse-7 {
+  width: 366px;
+  height: 366px;
+  top: 494px;
+  left: 703px;
+  opacity: 1;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.35) 0%, transparent 70%);
+}
+
+// Ellipse 8 (assuming similar to others for the 8th one)
+.ellipse-8 {
+  width: 300px;
+  height: 300px;
+  top: 550px;
+  left: 750px;
+  opacity: 0.9;
+  background: radial-gradient(ellipse, rgba(147, 51, 234, 0.3) 0%, transparent 70%);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-title {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  
+  .title-word {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  margin-top: 2rem;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+  }
+  
+  .button-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover .button-icon {
+    transform: translateX(5px);
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .cta-primary {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}

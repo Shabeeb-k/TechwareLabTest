@@ -1,0 +1,250 @@
+.logo-grid-section {
+  padding: 4rem 0;
+  background: #0a0a0f;
+  position: relative;
+  min-height: 600px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.logo-grid {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Adjust based on your layout needs */
+}
+
+.logo-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: absolute;
+  opacity: 1;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  &.dark {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  // First logo layout: width: 252; height: 344; top: 1469px; left: 200px;
+  &.first-logo {
+    width: 252px;
+    height: 344px;
+    top: 0px; /* Adjusted relative to container */
+    left: 200px;
+    background: #0E0E0E;
+    border-radius: 15px;
+  }
+  
+  // Second logo layout: width: 778; height: 224; top: 1469px; left: 462px;
+  &.second-logo {
+    width: 778px;
+    height: 224px;
+    top: 0px; /* Adjusted relative to container */
+    left: 462px;
+    background: #232323;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // Third logo layout: width: 252; height: 163; top: 1823px; left: 200px;
+  &.third-logo {
+    width: 252px;
+    height: 163px;
+    top: 354px; /* Adjusted relative to container (1823-1469=354) */
+    left: 200px;
+    background: #0E0E0E;
+    border-radius: 15px;
+  }
+  
+  // Fourth logo layout: width: 445; height: 285; top: 1703px; left: 462px;
+  &.fourth-logo {
+    width: 445px;
+    height: 285px;
+    top: 234px; /* Adjusted relative to container (1703-1469=234) */
+    left: 462px;
+    background: #0E0E0E;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // Fifth logo layout: width: 323; height: 284; top: 1703px; left: 917px;
+  &.fifth-logo {
+    width: 323px;
+    height: 284px;
+    top: 234px; /* Adjusted relative to container (1703-1469=234) */
+    left: 917px;
+    background: #0E0E0E;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Footer marquee section
+.logo-marquee-footer {
+  width: 1440px;
+  height: 85px;
+  position: absolute;
+  top: 666px; /* Adjusted relative to container (2135-1469=666) */
+  left: 0;
+  background-color: #282828;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  
+  .marquee-item {
+    color: white;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+  .logo-img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1); // Makes logos white
+    transition: transform 0.3s ease;
+  }
+}
+
+// First logo image specific styling
+.logo-item.first-logo {
+  .logo-img {
+    width: 112px;
+    height: 184px;
+    max-width: 112px;
+    max-height: 184px;
+    filter: none; // Remove white filter
+    opacity: 0.8; // Apply gray tint effect
+  }
+}
+
+// Second logo image specific styling
+.logo-item.second-logo {
+  .logo-img {
+    width: 288px;
+    height: 52.36px;
+    max-width: 288px;
+    max-height: 52.36px;
+    filter: brightness(0) invert(1); // Keep white filter
+    object-fit: contain;
+  }
+  
+  .logo-text-below {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    width: 94px;
+    height: 25px;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    
+    &.fourth-logo-text {
+      color: #ffffff !important;
+      position: relative;
+      margin-top: 2px;
+    }
+    
+    &.fifth-logo-text {
+      color: #ffffff !important;
+      position: absolute;
+      top: 423px; /* Adjusted relative to container (1892-1469=423) */
+      left: 1027px;
+      width: 94px;
+      height: 25px;
+      margin-top: 0;
+    }
+  }
+  
+  .logo-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+// Responsive Design
+@media (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .logo-grid {
+    transform: scale(0.8);
+    transform-origin: top left;
+    height: 480px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo-grid {
+    transform: scale(0.7);
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-grid-section {
+    padding: 3rem 0;
+  }
+  
+  .logo-grid {
+    transform: scale(0.5);
+    height: 300px;
+  }
+  
+  .logo-item {
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-grid {
+    transform: scale(0.35);
+    height: 210px;
+  }
+}
