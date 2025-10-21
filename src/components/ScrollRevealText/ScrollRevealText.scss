@@ -2,12 +2,16 @@
   padding: 4rem 0;
   background: #0a0a0f;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   max-width: 1040px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
 }
 
 .text-block {
@@ -20,8 +24,7 @@
     font-size: 40px;
     line-height: 45px;
     letter-spacing: -1%;
-    width: 1040px;
-    height: 315px;
+    width: 100%;
     max-width: 1040px;
     margin: 0 auto;
     
@@ -36,43 +39,63 @@
 }
 
 // Responsive Design
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+    padding: 0 2rem;
+  }
+  
+  .text-block p {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
 @media (max-width: 768px) {
   .scroll-reveal-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
   
   .container {
+    max-width: 100%;
     padding: 0 1.5rem;
   }
   
   .text-block {
-    margin-bottom: 4rem;
-    text-align: left !important;
-    
-    h2 {
-      font-size: 2.5rem;
-    }
+    text-align: center;
     
     p {
-      font-size: 24px;
-      line-height: 28px;
-      width: 90%;
-      height: auto;
-      max-width: 90%;
-      margin-left: 0 !important;
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: -0.5%;
     }
   }
 }
 
 @media (max-width: 480px) {
+  .scroll-reveal-section {
+    padding: 2.5rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
   .text-block {
-    h2 {
-      font-size: 2rem;
-    }
-    
     p {
-      font-size: 20px;
+      font-size: 22px;
+      line-height: 28px;
+      letter-spacing: 0%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .text-block {
+    p {
+      font-size: 18px;
       line-height: 24px;
     }
   }
+}
 }
